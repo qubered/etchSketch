@@ -15,7 +15,10 @@ for (let i=0; i < 16; i++) {
 const grids = document.querySelectorAll("#grid");
 
 grids.forEach((grid) => {
+    let opacity = 0.1;
+    
     grid.addEventListener("mouseover", () => {
-        grid.style.background = "red";
+        opacity = Math.min(opacity + 0.2, 1.0);
+        grid.style.background = `rgba(129, 7, 7, ${opacity})`;
     })
 })
