@@ -28,8 +28,10 @@ sizeSubmit.addEventListener("click", () => {
     }
     else {
         sizeBox.placeholder = sizeBox.value;
+
         parentDiv.replaceChildren();
         gridDraw(sizeBox.value);
+        sizeBox.value = "";
         const grids = document.querySelectorAll("#grid");
         gridListener()
     }
