@@ -45,7 +45,7 @@ function gridListener() {
         
         grid.addEventListener("mouseover", () => {
             opacity = Math.min(opacity + 0.1, 1.0);
-            grid.style.background = `rgba(129, 7, 7, ${opacity})`;
+            grid.style.background = `rgba(0, 0, 0, ${opacity})`;
         })
     })
 }
@@ -53,7 +53,7 @@ function gridListener() {
 clearButton.addEventListener("click", () => {
     const grids = document.querySelectorAll("#grid");
     grids.forEach((grid) => {
-        grid.style.background = "rgba(129, 7, 7, 0)";
+        grid.style.background = "rgba(0, 0, 0, 0)";
     })
 })
 
